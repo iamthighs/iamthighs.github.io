@@ -1,6 +1,5 @@
 import React from 'react'
 import certifications from '../data/certifications'
-import SmartImage from './SmartImage'
 
 export default function Certifications(){
   const tabs = [
@@ -42,7 +41,7 @@ export default function Certifications(){
 					{t.items.map((it, i) => (
 					  <div className={`col-xl-${t.id === 'overview' ? '2' : '3'} mb-3`} key={i}>
 						<a className="card lift shadow-none rounded-0" href={it.file} target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="top" title={it.title}>
-						  <SmartImage base={it.file.replace(/\.(png|jpe?g|svg)$/i, '')} alt={it.title} className="img-fluid" />
+						  <img src={it.file} alt={it.title} className="img-fluid" />
 						</a>
 					  </div>
 					))}

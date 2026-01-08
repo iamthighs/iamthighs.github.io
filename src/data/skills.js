@@ -1,7 +1,19 @@
 // src/data/skills.js
-export const frontendSkills = ['HTML','CSS','Javascript','Bootstrap Framework','React Library']
+export const frontendSkills = [
+    { name: 'HTML', img: '/assets/img/logos/html.png' },
+    { name: 'CSS', img: '/assets/img/logos/css.png' },
+    { name: 'Javascript', img: '/assets/img/logos/javascript.png' },
+    { name: 'Bootstrap Framework', img: '/assets/img/logos/bootstrapframework.png' },
+    { name: 'React Library', img: '/assets/img/logos/reactlibrary.png' }
+]
 
-export const backendSkills = ['C# Object-Oriented Programming','ASP.Net Core Framework','Entity Framework Core','Web API','SQL Server']
+export const backendSkills = [
+    { name: 'C# Object-Oriented Programming', img: '/assets/img/logos/cobjectorientedprogramming.png' },
+    { name: 'ASP.Net Core Framework', img: '/assets/img/logos/aspnetcoreframework.png' },
+    { name: 'Entity Framework Core', img: '/assets/img/logos/entityframeworkcore.jpeg' },
+    { name: 'Web API', img: '/assets/img/logos/webapi.png' },
+    { name: 'SQL Server', img: '/assets/img/logos/sqlserver.png' }
+]
 
 export const organizations = [
   { name: 'InternConnected', img: '/assets/img/logos/internconnected.png', title: 'Software Engineering Head Designer | 2020-2021' },

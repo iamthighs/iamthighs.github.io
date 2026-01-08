@@ -1,5 +1,4 @@
 import React from 'react'
-import SmartImage from './SmartImage'
 import { frontendSkills, backendSkills, organizations, tools } from '../data/skills'
 
 export default function Skills(){
@@ -21,17 +20,14 @@ export default function Skills(){
             <div className="mb-3">
               <h5 className="text-secondary text-center">Frontend Skills:</h5>
               <div className="list-group list-group-flush small">
-                {frontendSkills.map((s,i) => {
-                  const base = `/assets/img/logos/${s.toLowerCase().replace(/\s/g,'').replace(/[^a-z]/g,'')}`
-                  return (
-                    <div className="list-group-item" key={i}>
-                      <div className="d-flex align-items-center">
-                        <div className="avatar me-2"><SmartImage className="img-fluid" base={base} alt={s} style={{borderRadius:3}}/></div>
-                        {s}
-                      </div>
+                {frontendSkills.map((s,i) => (
+                  <div className="list-group-item" key={i}>
+                    <div className="d-flex align-items-center">
+                      <div className="avatar me-2"><img className="img-fluid" src={s.img} alt={s.name} style={{borderRadius:3}}/></div>
+                      {s.name}
                     </div>
-                  )
-                })}
+                  </div>
+                ))}
               </div>
             </div>
             <div className="text-center mb-3">
@@ -60,17 +56,14 @@ export default function Skills(){
             <div className="mb-3">
               <h5 className="text-primary text-center">Backend Skills:</h5>
               <div className="list-group list-group-flush small">
-                {backendSkills.map((s,i) => {
-                  const base = `/assets/img/logos/${s.toLowerCase().replace(/\s/g,'').replace(/[^a-z]/g,'')}`
-                  return (
-                    <div className="list-group-item" key={i}>
-                      <div className="d-flex align-items-center">
-                        <div className="avatar me-2"><SmartImage className="img-fluid" base={base} alt={s} style={{borderRadius:3}}/></div>
-                        {s}
-                      </div>
+                {backendSkills.map((s,i) => (
+                  <div className="list-group-item" key={i}>
+                    <div className="d-flex align-items-center">
+                      <div className="avatar me-2"><img className="img-fluid" src={s.img} alt={s.name} style={{borderRadius:3}}/></div>
+                      {s.name}
                     </div>
-                  )
-                })}
+                  </div>
+                ))}
               </div>
             </div>
             <div className="text-center mb-3">
