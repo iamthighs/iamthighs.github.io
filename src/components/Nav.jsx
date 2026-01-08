@@ -1,55 +1,38 @@
 import React from 'react'
+import StaggeredMenu from '../templates/StaggeredMenu';
+
+const menuItems = [
+  { label: 'Skills', ariaLabel: 'Go to home page', link: '#skills' },
+  { label: 'Education', ariaLabel: 'Learn about us', link: '#education' },
+  { label: 'Projects', ariaLabel: 'View our services', link: '#projects' },
+  { label: 'Certifications', ariaLabel: 'Get in touch', link: '#certifications' }
+];
+
+const socialItems = [
+  { label: 'GitHub', link: 'https://github.com/iamthighs' },
+  { label: 'LinkedIn', link: 'https://www.linkedin.com/in/iamthighs/' },
+    { label: 'Instagram', link: 'https://www.instagram.com/direct/t/106855870712537/' }
+];
 
 export default function Nav(){
   return (
-    <nav className="topnav shadow-sm navbar navbar-expand justify-content-between justify-content-sm-start navbar-light bg-white sticky-top" style={{height: '5rem'}} id="sidenavAccordion">
-      <a className="me-3 ms-4 ms-lg-15" href="#home">
-        <img src="/assets/img/tys-logo-512x512.png" style={{maxWidth:'5.25rem'}} alt="logo" />
-      </a>
-      <ul className="navbar-nav align-items-center ms-auto">
-        <a className="pt-3 pb-3" href="#skills" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Skills">
-          <div className="btn btn-outline-purple btn-icon me-1"><i data-feather="star"></i></div>
-        </a>
-        <a className="pt-3 pb-3" href="#education" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Education">
-          <div className="btn btn-outline-purple btn-icon me-1"><i data-feather="book-open"></i></div>
-        </a>
-        <a className="pt-3 pb-3" href="#projects" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Projects">
-          <div className="btn btn-outline-purple btn-icon me-1"><i data-feather="code"></i></div>
-        </a>
-        <a className="pt-3 pb-3" href="#certifications" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certifications">
-          <div className="btn btn-outline-purple btn-icon me-4"><i data-feather="award"></i></div>
-        </a>
-        <li className="nav-item dropdown no-caret me-3 me-lg-10 dropdown-notifications">
-          <a className="btn btn-purple btn-icon dropdown-toggle" id="navbarDropdownMessages" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i data-feather="mail"></i>
-          </a>
-          <div className="dropdown-menu dropdown-menu-end py-0 me-sm-n15 me-lg-0 o-hidden animated--fade-in-up" aria-labelledby="navbarDropdownMessages">
-            <a className="dropdown-item py-3" href="mailto:reynaldo.cortez0908@gmail.com" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="left" title="Send me a message">
-              <div className="icon-stack bg-primary-soft text-primary me-4"><i data-feather="mail"></i></div>
-              <div>
-                <div className="small text-primary">Email</div>
-                reynaldo.cortez0908@gmail.com
-              </div>
-            </a>
-            <div className="dropdown-divider m-0"></div>
-            <a className="dropdown-item py-3" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="left" title="Contact me">
-              <div className="icon-stack bg-primary-soft text-primary me-4"><i data-feather="phone"></i></div>
-              <div>
-                <div className="small text-primary">Contact Number</div>
-                (+63) 960 375-2437
-              </div>
-            </a>
-            <div className="dropdown-divider m-0"></div>
-            <a className="dropdown-item py-3" href="/assets/docs/RBCortezJr_Curriculum Vitae.pdf" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="left" title="Download CV">
-              <div className="icon-stack bg-primary-soft text-primary me-4"><i data-feather="download"></i></div>
-              <div>
-                <div className="small text-primary">Profile</div>
-                Curriculum Vitae
-              </div>
-            </a>
-          </div>
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <StaggeredMenu
+        position="right"
+        items={menuItems}
+        socialItems={socialItems}
+        displaySocials={true}
+        displayItemNumbering={true}
+        menuButtonColor="#6d06f2"
+        openMenuButtonColor="#000"
+        changeMenuColorOnOpen={true}
+        isFixed={true}
+        colors={['#B19EEF', '#5227FF']}
+        logoUrl="/assets/img/tys-logo-512x512.png"
+        accentColor="#6d06f2"
+        onMenuOpen={() => console.log('Menu opened')}
+        onMenuClose={() => console.log('Menu closed')}
+      />
+    </div>
   )
 }

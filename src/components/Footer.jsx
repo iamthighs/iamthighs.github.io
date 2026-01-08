@@ -23,7 +23,7 @@ export default function Footer(){
               <a className="btn btn-outline-purple btn-icon me-4 my-1" href="https://www.instagram.com/direct/t/106855870712537/" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
                 <i data-feather="instagram"></i>
               </a>
-              <a className="btn btn-outline-purple btn-icon me-4 my-1" href="https://www.linkedin.com/in/reynaldo-cortez-jr-29026022a/" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+              <a className="btn btn-outline-purple btn-icon me-4 my-1" href="https://www.linkedin.com/in/iamthighs/" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
                 <i data-feather="linkedin"></i>
               </a>
               <a className="btn btn-outline-purple btn-icon me-4 my-1" href="https://github.com/iamthighs" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
