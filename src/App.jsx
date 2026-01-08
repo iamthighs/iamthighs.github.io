@@ -4,7 +4,7 @@ import Home from './components/Home'
 import Skills from './components/Skills'
 import Education from './components/Education'
 import Projects from './components/Projects'
-import Certifications from './components/Certifications'
+import CertificationsV2 from './components/CertificationsV2'
 import CallToAction from './components/CallToAction'
 import Footer from './components/Footer'
 
@@ -38,7 +38,7 @@ export default function App(){
         <Skills />
         <Education />
         <Projects />
-        <Certifications />
+        <CertificationsV2 />
         <CallToAction />
       </main>
       <Footer />
