@@ -1,8 +1,6 @@
 import React from 'react'
 import SmartImage from './SmartImage'
-
-const frontendSkills = ['HTML','CSS','Javascript','Bootstrap Framework','React Library']
-const backendSkills = ['C# Object-Oriented Programming','ASP.Net Core Framework','Entity Framework Core','Web API','SQL Server']
+import { frontendSkills, backendSkills, organizations, tools } from '../data/skills'
 
 export default function Skills(){
   return (
@@ -39,10 +37,9 @@ export default function Skills(){
             <div className="text-center mb-3">
               <h5 className="text-secondary small">Application Tools:</h5>
               <div className="avatar">
-                <img className="img-fluid me-2" src="/assets/img/logos/vscode.png" alt="vscode" style={{borderRadius:3}}/>
-                <img className="img-fluid me-2" src="/assets/img/logos/vitejs.png" alt="vite" style={{borderRadius:3}}/>
-                <img className="img-fluid me-2" src="/assets/img/logos/npm.png" alt="npm" style={{borderRadius:3}}/>
-                <img className="img-fluid" src="/assets/img/logos/yarn.png" alt="yarn" style={{borderRadius:3}}/>
+                {tools.frontend.map((tool, i) => (
+                  <img key={i} className="img-fluid me-2" src={tool.img} alt={tool.name} style={{borderRadius:3}}/>
+                ))}
               </div>
             </div>
           </div>
@@ -79,9 +76,9 @@ export default function Skills(){
             <div className="text-center mb-3">
               <h5 className="text-primary small">Development Tools:</h5>
               <div className="avatar">
-                <img className="img-fluid me-2" src="/assets/img/logos/vsexpress.png" alt="vsexpress" style={{borderRadius:3}}/>
-                <img className="img-fluid me-2" src="/assets/img/logos/azure.png" alt="azure" style={{borderRadius:3}}/>
-                <img className="img-fluid" src="/assets/img/logos/ssms.png" alt="ssms" style={{borderRadius:3}}/>
+                {tools.backend.map((tool, i) => (
+                  <img key={i} className="img-fluid me-2" src={tool.img} alt={tool.name} style={{borderRadius:3}}/>
+                ))}
               </div>
             </div>
           </div>
@@ -102,44 +99,22 @@ export default function Skills(){
             <div className="mb-3">
               <h5 className="text-green text-center">Previous Organizations:</h5>
               <div className="list-group list-group-flush small">
-                <div className="list-group-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Software Engineering Head Designer | 2020-2021">
-                  <div className="d-flex align-items-center">
-                    <div className="avatar me-2"><img className="img-fluid" src="/assets/img/logos/internconnected.png" alt="internconnected" style={{borderRadius:3}}/></div>
-                    InternConnected
+                {organizations.map((org, i) => (
+                  <div className="list-group-item" key={i} data-bs-toggle="tooltip" data-bs-placement="right" title={org.title}>
+                    <div className="d-flex align-items-center">
+                      <div className="avatar me-2"><img className="img-fluid" src={org.img} alt={org.name} style={{borderRadius:3}}/></div>
+                      {org.name}
+                    </div>
                   </div>
-                </div>
-                <div className="list-group-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Course Representative | 2022-2023">
-                  <div className="d-flex align-items-center">
-                    <div className="avatar me-2"><img className="img-fluid" src="/assets/img/logos/csc.jpg" alt="csc" style={{borderRadius:3}}/></div>
-                    Central Student Council
-                  </div>
-                </div>
-                <div className="list-group-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Vice President for External Affairs | 2021-2022">
-                  <div className="d-flex align-items-center">
-                    <div className="avatar me-2"><img className="img-fluid" src="/assets/img/logos/scene.png" alt="scene" style={{borderRadius:3}}/></div>
-                    SCENE
-                  </div>
-                </div>
-                <div className="list-group-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Course Representative | 2022-2023">
-                  <div className="d-flex align-items-center">
-                    <div className="avatar me-2"><img className="img-fluid" src="/assets/img/logos/batch2023.jpg" alt="batch2023" style={{borderRadius:3}}/></div>
-                    Batch 23' Officers
-                  </div>
-                </div>
-                <div className="list-group-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Technical Head Committee | 2020-2022">
-                  <div className="d-flex align-items-center">
-                    <div className="avatar me-2"><img className="img-fluid" src="/assets/img/logos/lac.jpg" alt="lac" style={{borderRadius:3}}/></div>
-                    Little Angels' Club Scholars
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
             <div className="text-center mb-3">
               <h5 className="text-green small">Team Collaboration Tools:</h5>
               <div className="avatar">
-                <img className="img-fluid me-2" src="/assets/img/logos/trello.png" alt="trello" style={{borderRadius:3}}/>
-                <img className="img-fluid me-2" src="/assets/img/logos/msteams.png" alt="msteams" style={{borderRadius:3}}/>
-                <img className="img-fluid" src="/assets/img/logos/github.png" alt="github" style={{borderRadius:3}}/>
+                {tools.collaboration.map((tool, i) => (
+                  <img key={i} className="img-fluid me-2" src={tool.img} alt={tool.name} style={{borderRadius:3}}/>
+                ))}
               </div>
             </div>
           </div>
