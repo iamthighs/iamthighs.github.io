@@ -120,6 +120,18 @@ export default function Skills(){
                     SCENE
                   </div>
                 </div>
+                <div className="list-group-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Course Representative | 2022-2023">
+                  <div className="d-flex align-items-center">
+                    <div className="avatar me-2"><img className="img-fluid" src="/assets/img/logos/batch2023.jpg" alt="batch2023" style={{borderRadius:3}}/></div>
+                    Batch 23' Officers
+                  </div>
+                </div>
+                <div className="list-group-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Technical Head Committee | 2020-2022">
+                  <div className="d-flex align-items-center">
+                    <div className="avatar me-2"><img className="img-fluid" src="/assets/img/logos/lac.jpg" alt="lac" style={{borderRadius:3}}/></div>
+                    Little Angels' Club Scholars
+                  </div>
+                </div>
               </div>
             </div>
             <div className="text-center mb-3">
