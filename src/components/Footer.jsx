@@ -35,9 +35,9 @@ export default function Footer(){
             </div>
           </div>
           <p className="lead text-gray-500 fw-bold">E-Porfolio by Reynaldo B. Cortez Jr. &copy;  {currentYear}</p>
-          <a className="btn btn-purple rounded-pill small mb-4 text-gray-500 fw-bold text-center" href="https://startbootstrap.com/" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Start Bootstrap">
+          <a className="btn btn-purple rounded-pill small mb-4 text-gray-500 fw-bold text-center" href="https://react.dev/" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Start Bootstrap">
             Made with
-            <img className="ms-2" src="/assets/img/start_bootstrap.png" alt="startbootstrap" style={{width: '2rem'}} />
+            <img className="ms-2" src="/assets/img/logos/reactlibrary.png" alt="startbootstrap" style={{width: '2rem'}} /> 
           </a>
           <br />
         </div>
