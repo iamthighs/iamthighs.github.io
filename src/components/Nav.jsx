@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Nav(){
   return (
-    <nav className="topnav shadow-sm navbar navbar-expand justify-content-between justify-content-sm-start navbar-light bg-white" style={{height: '5rem'}} id="sidenavAccordion">
+    <nav className="topnav shadow-sm navbar navbar-expand justify-content-between justify-content-sm-start navbar-light bg-white sticky-top" style={{height: '5rem'}} id="sidenavAccordion">
       <a className="me-3 ms-4 ms-lg-15" href="#home">
         <img src="/assets/img/tys-logo-512x512.png" style={{maxWidth:'5.25rem'}} alt="logo" />
       </a>
