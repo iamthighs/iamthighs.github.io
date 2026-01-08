@@ -22,4 +22,9 @@ const certifications = {
   ]
 }
 
-export default certifications
+export const tabs = [
+	{ id: 'overview', label: 'Academic', items: certifications.overview },
+	{ id: 'activities', label: 'Skills', items: certifications.activities },
+	{ id: 'events', label: 'Events', items: certifications.events }
+  ]
+

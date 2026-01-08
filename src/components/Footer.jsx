@@ -1,4 +1,5 @@
 import React from 'react'
+import { socialLinks } from '../data/social'
 
 export default function Footer(){
   const currentYear = new Date().getFullYear();
@@ -17,21 +18,11 @@ export default function Footer(){
           </div>
           <div className="row justify-content-center mb-5">
             <div className="col-xl-4 col-sm-12 col-md-6 col-lg-6 rounded-pill bg-light pb-2 pt-2 text-center">
-              <a className="btn btn-outline-purple btn-icon me-4 my-1" href="https://www.facebook.com/messages/t/100005996918901" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
-                <i data-feather="facebook"></i>
-              </a>
-              <a className="btn btn-outline-purple btn-icon me-4 my-1" href="https://www.instagram.com/direct/t/106855870712537/" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
-                <i data-feather="instagram"></i>
-              </a>
-              <a className="btn btn-outline-purple btn-icon me-4 my-1" href="https://www.linkedin.com/in/iamthighs/" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
-                <i data-feather="linkedin"></i>
-              </a>
-              <a className="btn btn-outline-purple btn-icon me-4 my-1" href="https://github.com/iamthighs" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
-                <i data-feather="github"></i>
-              </a>
-              <a className="btn btn-outline-purple btn-icon my-1" href="mailto:reynaldo.cortez0908@gmail.com" target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="top" title="Gmail">
-                <i data-feather="mail"></i>
-              </a>
+              {socialLinks.map((link, i) => (
+                <a key={i} className={`btn btn-outline-purple btn-icon ${i < socialLinks.length - 1 ? 'me-4' : ''} my-1`} href={link.href} target="_blank" rel="noreferrer" data-bs-toggle="tooltip" data-bs-placement="top" title={link.title}>
+                  <i data-feather={link.icon}></i>
+                </a>
+              ))}
             </div>
           </div>
           <p className="lead text-gray-500 fw-bold">E-Porfolio by Reynaldo B. Cortez Jr. &copy;  {currentYear}</p>

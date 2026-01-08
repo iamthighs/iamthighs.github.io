@@ -1,18 +1,7 @@
 import React from 'react'
 import StaggeredMenu from '../templates/StaggeredMenu';
+import { menuItems, socialItems } from '../data/nav';
 
-const menuItems = [
-  { label: 'Skills', ariaLabel: 'Go to home page', link: '#skills' },
-  { label: 'Education', ariaLabel: 'Learn about us', link: '#education' },
-  { label: 'Projects', ariaLabel: 'View our services', link: '#projects' },
-  { label: 'Certifications', ariaLabel: 'Get in touch', link: '#certifications' }
-];
-
-const socialItems = [
-  { label: 'GitHub', link: 'https://github.com/iamthighs' },
-  { label: 'LinkedIn', link: 'https://www.linkedin.com/in/iamthighs/' },
-    { label: 'Instagram', link: 'https://www.instagram.com/direct/t/106855870712537/' }
-];
 
 export default function Nav(){
   return (

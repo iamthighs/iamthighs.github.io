@@ -1,12 +1,8 @@
 import React from 'react'
-import certifications from '../data/certifications'
+import {tabs} from '../data/certifications'
 
 export default function Certifications(){
-  const tabs = [
-	{ id: 'overview', label: 'Academic', items: certifications.overview },
-	{ id: 'activities', label: 'Skills', items: certifications.activities },
-	{ id: 'events', label: 'Events', items: certifications.events }
-  ]
+  
 
   return (
 	<section>
