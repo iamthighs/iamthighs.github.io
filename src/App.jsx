@@ -42,7 +42,6 @@ export default function App(){
         <CallToAction />
       </main>
       <Footer />
-      <div className="react-badge">React (Vite) loaded</div>
     </>
   )
 }
