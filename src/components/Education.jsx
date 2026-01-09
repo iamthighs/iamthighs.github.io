@@ -24,7 +24,7 @@ export default function Education(){
             <div className="timeline-item-content pt-0">
               <div className="col-xxl-4 col-xl-12 mb-4">
                 <SpotlightCard className="custom-spotlight-card" spotlightColor="#000">
-                <div className="h-100 p-5">
+                <div className="h-100 p-0">
                     <div className="row align-items-center">
                       <div className="col-xl-9 col-xxl-12">
                         <div className="me-3 align-items-center">
