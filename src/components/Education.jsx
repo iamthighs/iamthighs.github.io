@@ -1,5 +1,7 @@
 import React from 'react'
 import { timeline } from '../data/education'
+import SpotlightCard from '../templates/SpotlightCard';
+
 
 export default function Education(){
   return (
@@ -21,14 +23,14 @@ export default function Education(){
             </div>
             <div className="timeline-item-content pt-0">
               <div className="col-xxl-4 col-xl-12 mb-4">
-                <div className="card h-100 shadow-none rounded-xl border-primary">
-                  <div className="card-body h-100 p-5">
+                <SpotlightCard className="custom-spotlight-card" spotlightColor="#000">
+                <div className="h-100 p-5">
                     <div className="row align-items-center">
                       <div className="col-xl-9 col-xxl-12">
                         <div className="me-3 align-items-center">
                           <h5 className="text-primary fw-bolder">{t.title}</h5>
-                          <h1 className="text-dark fw-bolder p-0 m-0">{t.heading}</h1>
-                          <div className="text-dark fst-italic">{t.school}</div>
+                          <h1 className="text-light fw-bolder p-0 m-0">{t.heading}</h1>
+                          <div className="text-light fst-italic">{t.school}</div>
                           <div className="card-body">
                             <div className="timeline timeline-xs">
                               {t.items.map((it,i2) => (
@@ -46,7 +48,7 @@ export default function Education(){
                       <div className="col-xl-3 col-xxl-12 text-center"><img className="img-fluid" src={t.image} alt="logo" style={{maxWidth: '8rem'}}/></div>
                     </div>
                   </div>
-                </div>
+              </SpotlightCard>
               </div>
             </div>
           </div>

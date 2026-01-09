@@ -16,7 +16,7 @@ export default function Nav(){
         openMenuButtonColor="#000"
         changeMenuColorOnOpen={true}
         isFixed={true}
-        colors={['#B19EEF', '#5227FF']}
+        colors={['#B19EEF', '#6d06f2']}
         logoUrl="/assets/img/tys-logo-512x512.png"
         accentColor="#6d06f2"
         onMenuOpen={() => console.log('Menu opened')}
