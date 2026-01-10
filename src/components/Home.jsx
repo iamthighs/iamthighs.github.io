@@ -3,7 +3,7 @@ import React from 'react'
 export default function Home(){
   return (
     <section id="home">
-      <header className="py-5 bg-white mb-0">
+      <header className="py-5 bg-light mb-0">
         <div className="container-xl px-4">
           <div className="text-center">
             <h1 className="text-dark fw-bolder mt-10">Hello! I am Reynaldo B. Cortez Jr.</h1>
@@ -11,7 +11,7 @@ export default function Home(){
           </div>
         </div>
       </header>
-      <div className="text-center bg-white">
+      <div className="text-center bg-light">
         <img className="img-fluid mb-0" src="/assets/img/illustrations/tys-avatar-professional.png" alt="avatar" style={{maxWidth: '16.25rem'}} />
       </div>
       <header className="page-header page-header-dark bg-tys pb-15">

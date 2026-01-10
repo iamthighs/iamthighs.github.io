@@ -17,7 +17,7 @@ export const backendSkills = [
 
 export const organizations = [
   { name: 'InternConnected', img: '/assets/img/logos/internconnected.png', title: 'Software Engineering Head Designer | 2020-2021' },
-  { name: 'Central Student Council', img: '/assets/img/logos/csc.jpg', title: 'Course Representative | 2022-2023' },
+  { name: 'Central Student Council', img: '/assets/img/logos/csc.png', title: 'Course Representative | 2022-2023' },
   { name: 'SCENE', img: '/assets/img/logos/scene.png', title: 'Vice President for External Affairs | 2021-2022' },
   { name: 'Batch 23\' Officers', img: '/assets/img/logos/batch2023.jpg', title: 'Course Representative | 2022-2023' },
   { name: 'Little Angels\' Club Scholars', img: '/assets/img/logos/lac.jpg', title: 'Technical Head Committee | 2020-2022' }

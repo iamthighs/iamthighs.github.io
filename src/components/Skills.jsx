@@ -16,7 +16,7 @@ export default function Skills(){
                   <h5 className="fw-bolder text-purple">Frontend Development</h5>
                   <div className="text-light small">I enjoy creating user-friendly interfaces that are both efficient and easy to maintain</div>
                 </div>
-                <img src="/assets/img/illustrations/frontend-developer.svg" alt="frontend" style={{width: '8rem'}} />
+                <img className="d-none d-md-block" src="/assets/img/illustrations/frontend-developer.svg" alt="frontend" style={{width: '8rem'}} />
               </div>
             </div>
             <div className="mb-3">
@@ -53,7 +53,7 @@ export default function Skills(){
                   <h5 className="fw-bolder text-primary">Backend Development</h5>
                   <div className="text-light small">I like to program things from the server-side, and write clean and maintainable code</div>
                 </div>
-                <img src="/assets/img/illustrations/backend-developer.svg" alt="backend" style={{width: '8rem'}} />
+                <img className="d-none d-md-block" src="/assets/img/illustrations/backend-developer.svg" alt="backend" style={{width: '8rem'}} />
               </div>
             </div>
             <div className="mb-3">
@@ -89,7 +89,7 @@ export default function Skills(){
                 <h5 className="fw-bolder text-green">Leadership/ Collaboration</h5>
                 <div className="text-light small">I genuinely care about people, and love helping a team to achieve a common goal</div>
                 </div>
-                <img src="/assets/img/illustrations/team-collaboration.svg" alt="team" style={{width: '8rem'}} />
+                <img className="d-none d-md-block" src="/assets/img/illustrations/team-collaboration.svg" alt="team" style={{width: '8rem'}} />
               </div>
             </div>
             <div className="mb-3">

@@ -13,6 +13,6 @@ export const timeline = [
     heading: 'General Academic Strand',
     school: 'Las Piñas City National Senior High School - CAA Campus',
     items: ['With Honors'],
-    image: '/assets/img/CAASHS.jpg'
+    image: '/assets/img/CAASHS.png'
   }
 ]
